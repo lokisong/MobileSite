@@ -67,6 +67,7 @@ public partial class joblistaspx : System.Web.UI.Page
             hbJobContent.InnerHtml += @"No Data";
         }
 
+        //setting page index
         try
         {
             MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
@@ -90,6 +91,8 @@ public partial class joblistaspx : System.Web.UI.Page
             {
                 nextPage.HRef = keyword == null ? "?page=" + (page + 1).ToString() : "?page=" + (page + 1).ToString() + "&keyword=" + keyword;
             }
+
+            //setting job view
             hbJobContent.InnerHtml += JobCommon.JobUtility.GetJob(job, page, pagesize);
             
         }

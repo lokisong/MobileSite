@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="jobsearch.aspx.cs" Inherits="jobsearch" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ajobsearch.aspx.cs" Inherits="ajobsearch" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,17 +6,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>FCA</title>
-		<link rel="stylesheet" href="themes/Bootstrap.css">
+		<title>nielsen</title>
+		<link rel="stylesheet" href="../themes/Bootstrap.css">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
-		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
 		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div data-role="page" data-theme="e" style="z-index:99999;">
 			<div data-role="header" data-position="inline" data-theme="e">
-                <img src="images/FCA/logo_FCA.png" />
+                <img src="../images/nielsen/nielsen.jpg" height="73px"/>
 			</div>			
   
 		    <div data-role="content" data-theme="a">				

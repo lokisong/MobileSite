@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="jobapply.aspx.cs" Inherits="jobapply" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="ajobapply.aspx.cs" Inherits="ajobapply" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,17 +6,17 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>FCA</title>
-		<link rel="stylesheet" href="themes/Bootstrap.css">
+		<title>nielsen</title>
+		<link rel="stylesheet" href="../themes/Bootstrap.css">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
-		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
 		<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js" type="text/javascript"></script>
 	</head>
 	<body>
 		<div data-role="page" data-theme="e" style="z-index:99999;">
 			<div data-role="header" data-position="inline" data-theme="e">
-        <img src="images/FCA/logo_FCA.png" />
+        <img src="../images/nielsen/nielsen.jpg" height="73px"/>
 			</div>			
   
 		    <div data-role="content" data-theme="a">				
@@ -44,19 +44,19 @@
                 <div>
 			         <label for="years">工作年限<span class="red">*</span></label>
                      <select id="years" tabindex="1" runat="server">
-                            <option value="0">请选择</option>
-                            <option value="1">1年</option>
-                            <option value="2">2年</option>
-                            <option value="4">3年</option>
-                            <option value="10">4年</option>
-                            <option value="5">5年</option>
-                            <option value="6">6年</option>
-                            <option value="7">7年</option>
-                            <option value="8">8年</option>
-                            <option value="9">9年</option>
-                            <option value="10">10-15年</option>
-                            <option value="16">16-20年</option>
-                            <option value="20">20年以上</option>
+                            <option value="">请选择</option>
+                            <option value="1年">1年</option>
+                            <option value="2年">2年</option>
+                            <option value="3年">3年</option>
+                            <option value="4年">4年</option>
+                            <option value="5年">5年</option>
+                            <option value="6年">6年</option>
+                            <option value="7年">7年</option>
+                            <option value="8年">8年</option>
+                            <option value="9年">9年</option>
+                            <option value="10-15年">10-15年</option>
+                            <option value="16-20年">16-20年</option>
+                            <option value="20年以上">20年以上</option>
                             </select>
 			    </div>
                 <div>
@@ -70,16 +70,16 @@
 			    <div>
 			         <label for="education">学历<span class="red">*</span></label>
 			         <select id="education" tabindex="1" runat="server">
-                            <option value="0">请选择</option>
-                            <option value="1">博士</option>
-                            <option value="2">硕士</option>
-                            <option value="4">本科</option>
-                            <option value="10">大专</option>
-                            <option value="5">中专</option>
-                            <option value="6">中技</option>
-                            <option value="10">高中</option>
-                            <option value="10">初中</option>
-                            <option value="0">其他</option>
+                            <option value="">请选择</option>
+                            <option value="PhD">博士</option>
+                            <option value="Master Degree">硕士</option>
+                            <option value="Bachelors Degree">本科</option>
+                            <option value="Diploma">大专</option>
+                            <option value="'O' Levels">中专</option>
+                            <option value="'N' Levels">中技</option>
+                            <option value="ITE/'A' Levels">高中</option>
+                            <option value="Secondary">初中</option>
+                            <option value="Others">其他</option>
                             </select>
 			    </div>
                

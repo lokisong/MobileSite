@@ -177,6 +177,9 @@ namespace Aqayo
 
     public class AqayoUtility
     {
+        public static int totalRecodes=0;
+
+        public static int perPage=0;
 
         public string getAccess()
         {
@@ -190,10 +193,32 @@ namespace Aqayo
             return ak.accesskey;
         }
 
-        public string getJobs(string start)
+        public string getJobs(string start,string keyword)
         {
             GetSubmitter newget = new GetSubmitter();
-            string url = ConfigurationManager.AppSettings["getjobs"] + "?accessKey=" + getAccess() + "&externalsiteid=" + ConfigurationManager.AppSettings["externalsiteid"] + "&start=" + start;
+            string url = ConfigurationManager.AppSettings["getjobs"] + "?accessKey=" + getAccess() + "&externalsiteid=" + ConfigurationManager.AppSettings["externalsiteid"] + "&start=" + start + "&keyword=" + keyword;
+            string result = newget.GetModel(url);
+            //MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
+            //DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(searchResult));
+            //searchResult sr = (searchResult)serializer.ReadObject(ms);
+            return result;
+        }
+
+        public string getJobDetail(string id)
+        {
+            GetSubmitter newget = new GetSubmitter();
+            string url = ConfigurationManager.AppSettings["getJD"] + "?accessKey=" + getAccess() + "&externaluid=" + id;
+            string result = newget.GetModel(url);
+            //MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
+            //DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(searchResult));
+            //searchResult sr = (searchResult)serializer.ReadObject(ms);
+            return result;
+        }
+
+        public string getCandidateFields()
+        {
+            GetSubmitter newget = new GetSubmitter();
+            string url = ConfigurationManager.AppSettings["getCandidateFields"] + "?accessKey=" + getAccess();
             string result = newget.GetModel(url);
             //MemoryStream ms = new MemoryStream(Encoding.UTF8.GetBytes(result));
             //DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(searchResult));
@@ -215,6 +240,7 @@ namespace Aqayo
             return sr;
 
         }
+
     }
 
 }
